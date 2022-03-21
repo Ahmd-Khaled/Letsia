@@ -20,7 +20,6 @@
 body {
     font-family: "vip-rawy-regular";
     font-size: 1rem;
-    height: 5000px;
 }
 
 .to-top {
@@ -413,22 +412,11 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    /* padding-bottom: 6rem; */
     position: relative;
     text-align: center;
     font-size: 25px;
     font-family: "vip-rawy-bold";
 }
-/* .our-works .tabs .tab-content .box::before {
-    content: attr(data-imgtitle);
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    font-size: 30px;
-    font-family: "vip-rawy-bold";
-    line-height: 1;
-    margin-top: 0rem;
-} */
 .our-works .tabs .tab-content .box .image {
     margin-bottom: 1rem;
 }
@@ -454,3 +442,105 @@ body {
     justify-content: center;
     align-items: center;
 }
+.our-client {
+    background-image: url(../imgs/white-elegant-texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.our-client .image img {
+    margin-top: -1.5rem;
+}
+@media (min-width: 992px) {
+    .our-client .content {
+        margin-left: -5rem;
+    }
+}
+.our-client .head-title .line-bf {
+    width: 100px;
+    height: 10px;
+    background-color: #FF6547;
+    margin-right: 1rem;
+}
+.our-client .head-title .title {
+    color: #FF6547;
+    font-size: 30px;
+    font-family: "vip-rawy-bold";
+}
+.our-client .large-title {
+    font-size: 50px;
+    font-family: "vip-rawy-bold";
+}
+.our-client .carousel .carousel-item .person .p-name {
+    padding-top: 1rem;
+    font-family: "vip-rawy-bold";
+    color: var(--black-color);
+    font-size: 30px;
+}
+.our-client .carousel .carousel-item .person .p-title {
+    color: #FFAE00;
+    font-size: 20px;
+}
+.our-client .carousel .carousel-control {
+    position: relative;
+    left: 48%;
+    top: 1rem;
+}
+.our-client .carousel .left-arrow {
+    position: absolute;
+    top: 0;
+    left: -4rem;
+}
+.our-client .carousel .left-arrow,
+.our-client .carousel .right-arrow {
+    background-color: #FFE8E4;
+    color: #FF6547;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.our-client .carousel .left-arrow:hover,
+.our-client .carousel .right-arrow:hover {
+    background-color: #FF6547;
+    color: var(--white-color);
+}
+.our-client .blockq blockquote {
+    padding: 2rem 5rem;
+    color: #2E2E2E;
+    font-size: 26px;
+    line-height: 1.5;
+}
+@media (min-width: 992px) {
+    .our-client .blockq blockquote {
+        height: 160px;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+}
+.our-client .blockq .comma-bf {
+    width: 8%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+.our-client .blockq .comma-af {
+    width: 8%;
+    position: absolute;
+    bottom: -0.5rem;
+    right: 2rem;
+}
+
+
+
+
+/* .our-client .blockq::before {
+    content: url(../imgs/comma.svg);
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+}
+.our-client .blockq::after {
+    content: url(../imgs/comma-1.svg);
+    position: absolute;
+    bottom: -3rem;
+    right: 3rem;
+} */
