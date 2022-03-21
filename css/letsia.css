@@ -491,6 +491,11 @@ body {
     top: 0;
     left: -4rem;
 }
+@media (max-width: 767px) {
+    .our-client .carousel .left-arrow {
+        left: -5rem;
+    }
+}
 .our-client .carousel .left-arrow,
 .our-client .carousel .right-arrow {
     background-color: #FFE8E4;
