@@ -493,7 +493,7 @@ body {
 }
 @media (max-width: 767px) {
     .our-client .carousel .left-arrow {
-        left: -5rem;
+        left: -6rem;
     }
 }
 .our-client .carousel .left-arrow,
