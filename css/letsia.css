@@ -106,14 +106,66 @@ body {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
-/* -----------Page-------------- */
-/* .landing {
-    opacity: 1;
-    background-image: url(../imgs/background@2x.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.contact-us form {
+    background-color: var(--white-color);
+    width: 80%;
+    font-family: "vip-rawy-bold";
+    font-size: 30px;
+    margin: auto;
+}
+.contact-us form label {
+    color: var(--black-color);
+}
+.contact-us form ::placeholder {
+    color: #C1C1C1;
+    font-size: 20px;
+    font-family: "vip-rawy-bold";
+}
+.contact-us form input:not([type="submit"]),
+.contact-us form textarea {
+    border: 1px solid #B4B4B4;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: "Font Awesome 5 Free",'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.contact-us form input:not([type="submit"]):focus,
+.contact-us form textarea:focus {
+    border: 1px solid #FF9E0E;
+}
+.contact-us form textarea {
+    height: 300px;
+    position: relative;
+}
+.contact-us form input:not([type="submit"]) {
+    position: relative;
+}
+/* .contact-us form input:not([type="submit"]) {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f27a";
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
 } */
+.contact-us form .send-btn {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* -----------Page-------------- */
 .landing {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/background@2x.png);
     background-size: cover;
@@ -125,15 +177,6 @@ body {
         height:calc(100vh + 93px + 1rem);  /* 73px +20px*/
     }
 }
-/* .landing::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.80);
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 .landing .navbar {
     padding-top: 40px;
     margin-bottom: 1rem;
