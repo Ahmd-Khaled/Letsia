@@ -21,7 +21,6 @@ body {
     font-family: "vip-rawy-regular";
     font-size: 1rem;
 }
-
 .to-top {
     display: inline-block;
     width: 3rem;
@@ -63,7 +62,7 @@ body {
 }
 @media (min-width: 1350px) {
     .landing {
-        height:calc(100vh + 93px);  /* 73px +20px*/
+        height:calc(100vh + 93px + 1rem);  /* 73px +20px*/
     }
 }
 /* .landing::before {
@@ -77,6 +76,12 @@ body {
 } */
 .landing .navbar {
     padding-top: 40px;
+    margin-bottom: 1rem;
+}
+@media (max-width: 575px) {
+    .landing .navbar .navbar-brand {
+        margin-bottom: 1rem;
+    }
 }
 .landing .navbar .navbar-brand img {
     width: 70%;
@@ -242,6 +247,12 @@ body {
     -o-border-radius: 15px;
     cursor: pointer;
 }
+@media (max-width: 767px) {
+    .what-we-do .curved-bground .play-btn {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
 .what-we-do .curved-bground .play-btn:hover {
     opacity: 0.7;
 }
@@ -269,21 +280,6 @@ body {
         background-color: #D8D8D8;
     }
 }
-.what-we-do .curved-bground .works .box .box-top {
-    /* background-color: red; */
-    /* height: 40%; */
-}
-.what-we-do .curved-bground .works .box .box-middle {
-    /* background-color: green; */
-    /* height: 25%; */
-}
-.what-we-do .curved-bground .works .box .box-bottom {
-    /* background-color: blueviolet; */
-    /* height: 35%; */
-}
-.what-we-do .curved-bground .works .box img {
-    /* max-width: 30%; */
-}
 .what-we-do .curved-bground .works .box h3 {
     font-family: "vip-rawy-bold";
     font-size: 30px;
@@ -302,16 +298,15 @@ body {
 }
 .our-vision {
     background-color: #ffffee;
-    /* background-image: url(../imgs/18410.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; */
 }
-.our-vision .image img {
+.our-vision .image img,
+.our-purpose .image img {
     margin-left: -2rem;
 }
 .our-vision .content .head-title .line-bf,
-.our-vision .content .head-title .line-af {
+.our-vision .content .head-title .line-af,
+.our-purpose .content .head-title .line-bf,
+.our-purpose .content .head-title .line-af {
     width: 122px;
     height: 3px;
     background-color: var(--black-color);
@@ -321,19 +316,28 @@ body {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-.our-vision .content .head-title .title {
+.our-vision .content .head-title .title,
+.our-purpose .content .head-title .title {
     color: #FF9E0E;
     font-size: 30px;
     font-family: "vip-rawy-bold";
 }
-.our-vision .content .large-title {
+.our-vision .content .large-title,
+.our-purpose .content .large-title {
     font-size: 50px;
     font-family: "vip-rawy-bold";
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.our-vision .content .text {
-    font-size: 18px;
+@media (max-width: 767px) {
+    .our-vision .content .large-title,
+    .our-purpose .content .large-title {
+        font-size: 40px;
+    }
+}
+.our-vision .content .text,
+.our-purpose .content .text {
+    font-size: 20px;
     font-family: "vip-rawy-regular";
 }
 .our-vision .content .contact-us-btn {
@@ -401,7 +405,7 @@ body {
     -o-transform: translate(-50%, -50%);
 }
 .our-works .tabs .tab-content {
-    background-color: #F6F6F6;
+    /* background-color: #F6F6F6; */
     padding: 1rem;
 }
 .our-works .tabs .tab-content .box {
@@ -424,7 +428,7 @@ body {
     content: attr(data-imgnum);
     position: absolute;
     bottom: -1rem;
-    right: -1rem;
+    right: -0.75rem;
     font-size: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -514,8 +518,14 @@ body {
     font-size: 26px;
     line-height: 1.5;
 }
+.our-client .blockq blockquote .num {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #FF5638;
+}
 @media (min-width: 992px) {
     .our-client .blockq blockquote {
+        padding: 2rem 5rem;
         height: 160px;
         overflow: hidden;
         text-overflow: clip;
