@@ -99,7 +99,6 @@ body {
 }
 .landing .navbar .contact-us-btn {
     background-color: var(--red1-FF5638);
-    color: var(--white-color);
     padding: 7px 20px;
     font-size: 20px;
     border-radius: .5rem;
@@ -107,6 +106,9 @@ body {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
+}
+.landing .navbar .contact-us-btn a {
+    color: var(--white-color);
 }
 .landing .navbar .contact-us-btn:hover {
     opacity: 0.7;
