@@ -47,9 +47,6 @@ body {
 }
 .to-top.show {right: 1rem;}
 /* -----------contact-us Page------- */
-.contact-us {
-    height: 600px;
-}
 .contact-us .contact-us-head .head-title .line-bf {
     width: 100px;
     height: 10px;
@@ -75,12 +72,39 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    padding-top: 3rem;
+}
+.contact-us .contacts .box {
+    color: var(--black-color);
+    font-size: 28px;
+    font-family: "vip-rawy-bold";
+    background-color: var(--white-color);
+    width: fit-content;
+    width: -moz-fit-content;
+}
+@media (max-width: 575px) {
+    .contact-us .contacts .box {
+        font-size: 20px;
+    }
 }
 .contact-us .contacts .box img {
-    width: 25%;
+    width: 100px;
+    height: 100px;
+}
+.contact-us .contacts .box .info {
+    height: 100px;
+    margin-left: -20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top: 1px solid #C7C7C7;
+    border-right: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .contact-us .contacts .box .num {
     font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 /* -----------Page-------------- */
 /* .landing {
