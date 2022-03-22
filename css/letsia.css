@@ -493,7 +493,7 @@ body {
 }
 @media (max-width: 767px) {
     .our-client .carousel .left-arrow {
-        left: -6rem;
+        left: -5rem;
     }
 }
 .our-client .carousel .left-arrow,
@@ -533,19 +533,122 @@ body {
     bottom: -0.5rem;
     right: 2rem;
 }
-
-
-
-
-/* .our-client .blockq::before {
-    content: url(../imgs/comma.svg);
-    position: absolute;
-    top: -2rem;
-    left: -1rem;
+.work-with-us {
+    font-family: "vip-rawy-bold";
 }
-.our-client .blockq::after {
-    content: url(../imgs/comma-1.svg);
+.work-with-us .sec-ttl {
+    background-color: #FFF7E5;
+    color: #FFAE00;
+    font-size: 30px;
+    padding: 7px 50px;
+}
+.work-with-us .ask {
+    font-size: 42px;
+    color: var(--black-color);
+}
+.work-with-us .create {
+    font-size: 42px;
+    color: var(--black-color);
+}
+.work-with-us .startp-btn {
+    background-color: #232323;
+    color: var(--white-color);
+    padding: 15px 35px 15px 35px;
+    font-size: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.work-with-us .startp-btn:hover {
+    opacity: 0.7;
+}
+.work-with-us .startp-btn a {
+    color: var(--white-color);
+}
+@media (max-width: 767px) {
+    .work-with-us .sec-ttl {
+        font-size: 25px;
+        padding: 7px 40px;
+    }
+    .work-with-us .ask {
+        font-size: 35px;
+    }
+    .work-with-us .create {
+        font-size: 35px;
+    }
+    .work-with-us .startp-btn {
+        padding: 15px 30px 15px 30px;
+        font-size: 25px;
+    }
+}
+footer {
+    background-image: url(../imgs/background-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--white-color);
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+footer .f-head {
+    color: #FFAE00;
+    font-size: 30px;
+    font-family: "vip-rawy-bold"
+}
+@media (min-width: 1200px) {
+    footer .about-company {
+        padding-left: 4rem;
+    }
+}
+footer .about-company .market {
+    font-size: 30px;
+    font-family: "vip-rawy-bold"
+}
+footer .about-company p {
+    font-size: 18px;
+    color: #f6f6f6;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+footer ul li {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+}
+footer ul li a {
+    color: #f6f6f6;
+}
+footer ul li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f105";
     position: absolute;
-    bottom: -3rem;
-    right: 3rem;
-} */
+    left: 0;
+    top: 0;
+    color: #FF6547;
+}
+footer .social a:not(:last-child) {
+    margin-right: 0.5rem;
+}
+footer .social a:hover {
+    opacity: 0.7;
+}
+.copyright {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.copyright p {
+    font-size: 25px;
+    font-family: "vip-rawy-bold"
+}
+.copyright p span {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .copyright p {
+        font-size: 20px;
+    }
+}
