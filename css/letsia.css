@@ -46,6 +46,42 @@ body {
     -o-transform: translateY(-3px);
 }
 .to-top.show {right: 1rem;}
+/* -----------contact-us Page------- */
+.contact-us {
+    height: 600px;
+}
+.contact-us .contact-us-head .head-title .line-bf {
+    width: 100px;
+    height: 10px;
+    background-color: #FF6547;
+    margin-right: 1rem;
+}
+.contact-us .contact-us-head .head-title .title {
+    color: #FF6547;
+    font-size: 30px;
+    font-family: "vip-rawy-bold";
+}
+.contact-us .contact-us-head .large-title {
+    font-size: 50px;
+    font-family: "vip-rawy-bold";
+}
+.contact-us .contact-us-head .text {
+    color: #B2B2B2;
+    font-size: 30px;
+    font-family: "vip-rawy-bold";
+}
+.contact-us .contacts {
+    background-image: url(../imgs/2987331.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contact-us .contacts .box img {
+    width: 25%;
+}
+.contact-us .contacts .box .num {
+    font-family:'Courier New', Courier, monospace;
+}
 /* -----------Page-------------- */
 /* .landing {
     opacity: 1;
