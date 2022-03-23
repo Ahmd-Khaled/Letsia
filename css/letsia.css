@@ -172,14 +172,13 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1200px) {
     .landing {
-        height:calc(100vh + 93px + 1rem);  /* 73px +20px*/
+        height:calc(100vh + 93px + 2rem);  /* 73px +20px*/
     }
 }
 .landing .navbar {
     padding-top: 40px;
-    margin-bottom: 1rem;
 }
 @media (max-width: 575px) {
     .landing .navbar .navbar-brand {
@@ -220,8 +219,10 @@ body {
     color: var(--white-color);
     padding-top: 20px;
 }
-.landing .department .content {
-    padding-top: 90px;
+@media (min-width: 992px) {
+    .landing .department .content {
+        padding-top: 90px;
+    }
 }
 .landing .department .content .head-title .line-bf,
 .landing .department .content .head-title .line-af {
@@ -279,6 +280,12 @@ body {
     background-color: #17181C;
     padding-top: 70px;
     padding-bottom: 70px;
+}
+@media (min-width: 1200px) {
+    .what-we-do.background-cut {
+        height: 1000px;
+        margin-bottom: 220px;
+    }
 }
 .what-we-do .curved-bground {
     background-color: var(--white-color);
@@ -374,8 +381,8 @@ body {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-@media (min-width: 768px) {
-    .what-we-do .curved-bground .works .box.line-af::before {
+@media (min-width: 1200px) {
+    .what-we-do .curved-bground .box.line-af::before {
         content: "";
         position: absolute;
         top: 10%;
@@ -385,21 +392,21 @@ body {
         background-color: #D8D8D8;
     }
 }
-.what-we-do .curved-bground .works .box h3 {
+.what-we-do .curved-bground .box h3 {
     font-family: "vip-rawy-bold";
     font-size: 30px;
     color: #000;
 }
-.what-we-do .curved-bground .works .box h3 span {
+.what-we-do .curved-bground .box h3 span {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
-.what-we-do .curved-bground .works .box p {
+.what-we-do .curved-bground .box p {
     color: #707070;
     font-size: 22px;
     height: 100px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
 }
 .our-vision {
     background-color: #ffffee;
